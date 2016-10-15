@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8' />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	<meta name="description" content="Ponencia preparada para la GeocampES 2016" />
+	<!--<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">-->
+	<meta name="author" content="Moisés Arcos Santiago">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="revealjs/css/reveal.css">
+	<link rel="stylesheet" href="revealjs/css/theme/beige.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="revealjs/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<title>flashmapmob - El nuevo concepto para mapear</title>
+	</head>
+
+	<body>
+		<!-- Reaveal Section -->
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h1>FlashMapMob</h1>
+						<h2>Un nuevo concepto</h2>
+						<h3>
+							<a href="http://sevilla.geoinquietos.org">Geoinquietos&nbsp;Sevilla</a>
+						</h3>
+						<h3>Sabado, 22 de octubre de 2016</h3>
+					</section>
+					<section>
+            			<h1>
+              				<span>¿Geoinquietos Sevilla?</span>
+            			</h1>
+            			<div>
+              				<ul>
+                				<li>Encuentros locales informales</li>
+                				<li>Compartimos conocimiento</li>
+                				<li>Organizamos charlas</li>
+                				<li>Divulgamos Software Libre</li>
+              				</ul>
+            			</div>
+          			</section>
+					<section>
+						<h1>
+							<span>Quién soy yo</span>
+						</h1>
+						<div>
+							<ul>
+								<h4>Moisés Arcos - <a href="https://twitter.com/MoiArcSan">@moiarcsan</a></h4>
+								<li>Desarrollador GIS</li>
+								<li>Miembro de</li>
+								<ul>
+									<li>
+										<a href="http://wiki.osgeo.org/wiki/User:Moiarcsan">OSGeo</a>&nbsp;y&nbsp;<a href="http://es.osgeo.org">OSGeo-es</a>
+									</li>
+									<li>
+										<a href="http://sevilla.geoinquietos.org">Geoinquietos Sevilla</a>
+									</li>
+									<li>
+										<a href="http://www.openstreetmap.org/user/MoiArcSan">OpenStreetMap</a>
+									</li>
+									<li>...</li>
+								</ul>
+							</ul>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Introducci´on</h2>
+					</section>
+				</section>
+				<section>
+					<h2>Agradecimientos</h2>
+					<h3>Gracias por vuestra atención</h3>
+				</section>
+				<section>
+					<h2>Licencia</h2>
+					<img src="http://www.webislam.com/libs/timthumb.php?src=/media/2013/03/56559_cc-by-sa_big.png&amp;w=300" style="width: 596.9540779159607px; height: 207.4198472772846px; max-height: none; max-width: none;"><br>
+					<span>CC-BY-SA</span>
+				</section>
+			</div>
+		</div>
+		<!-- Script Reveal.js -->
+		<script src="revealjs/lib/js/head.min.js"></script>
+		<script src="revealjs/js/reveal.js"></script>
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+				{ src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+	</body>
+</html>
